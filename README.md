@@ -8,8 +8,6 @@ for [kube-demos](https://github.com/thockin/kube-demos). Run
 ## Dependencies
 
 * pv
-* realpath
-* dirname
 * sed
 
 
