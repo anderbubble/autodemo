@@ -68,6 +68,7 @@ desc "  command."
 newl
 run "DEMO_RUN_DELAY=5"
 run date
+run "unset DEMO_RUN_DELAY"
 newl
 
 desc "* DEMO_RATE controls the rate at which commands and comments are"
