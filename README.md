@@ -7,8 +7,7 @@ for [kube-demos](https://github.com/thockin/kube-demos). Run
 
 ## Dependencies
 
-* pv
-* sed
+* [pv](http://www.ivarch.com/programs/pv.shtml)
 
 
 ## Functions
