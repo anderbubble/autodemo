@@ -184,7 +184,7 @@ function init
     trap reset_trap EXIT
     trap reset_exit_trap INT
 
-    check_dependencies pv realpath dirname sed
+    check_dependencies pv sed
     tty_orig=$(stty -g)
 }
 
