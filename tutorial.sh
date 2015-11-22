@@ -101,4 +101,4 @@ run pwd
 newl
 
 desc "That's everything you need to know to use autodemo. You can"
-desc "find the source for this tutorial in $0."
+desc "find the source for this tutorial in \`$0'."
