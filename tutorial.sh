@@ -57,9 +57,7 @@ newl
 
 desc "* DEMO_AUTO_RUN skips waiting for \`return' during command"
 desc "  execution. It defaults to \`false', but has been set to"
-desc "  \`true'"
-
-desc "  for this tutorial."
+desc "  \`true' for this tutorial."
 newl
 run "DEMO_AUTO_RUN=false"
 newl
