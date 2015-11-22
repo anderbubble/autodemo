@@ -80,7 +80,7 @@ desc "* DEMO_RATE controls the rate at which commands and comments are"
 desc "  printed."
 newl
 run "DEMO_RATE=50"
-desc "Now everything is typed at twice the default rate."
+desc "Now everything is printed at twice the default rate."
 newl
 
 desc "* DEMO_DESC_RATE controls the rate at which comments are"
