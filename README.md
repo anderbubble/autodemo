@@ -14,7 +14,7 @@ for [kube-demos](https://github.com/thockin/kube-demos). Run
 
 * desc - print comments
 * run - run commands
-# newl - insert a newline
+* newl - insert a newline
 
 
 ## Environment variables
