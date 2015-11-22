@@ -27,6 +27,7 @@ function newl
 {
     echo_off
     prompt
+    sleep $(get_run_delay)
     echo
     tty_restore
 }
