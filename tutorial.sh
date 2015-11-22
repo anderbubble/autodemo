@@ -49,7 +49,7 @@ desc "That was a newline."
 newl
 
 desc "Using these functions you can write scripts that execute"
-desc "interacitvely, as though you were typing them yourself."
+desc "interactively, as though you were typing them yourself."
 newl
 
 desc "Environment variables"
