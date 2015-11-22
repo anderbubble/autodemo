@@ -1,7 +1,7 @@
 # autodemo
 
-Watchable automatic demos, based on the framework developed by Tim
-Hockin for [kube-demos](https://github.com/thockin/kube-demos). Run
+Automated live demos, based on the framework developed by Tim Hockin
+for [kube-demos](https://github.com/thockin/kube-demos). Run
 `tutorial.sh` for an example.
 
 
