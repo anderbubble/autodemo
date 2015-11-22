@@ -1,7 +1,8 @@
 # autodemo
 
 Watchable automatic demos, based on the framework developed by Tim
-Hockin for kube-demos[1]. Run `tutorial.sh' for an example.
+Hockin for [kube-demos](https://github.com/thockin/kube-demos). Run
+`tutorial.sh` for an example.
 
 
 ## Dependencies
@@ -26,8 +27,3 @@ Hockin for kube-demos[1]. Run `tutorial.sh' for an example.
 * DEMO_RATE
 * DEMO_DESC_RATE
 * DEMO_RUN_RATE
-
-
-## References
-
-[1]: https://github.com/thockin/kube-demos
