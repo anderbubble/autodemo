@@ -18,58 +18,81 @@
 . $(dirname ${BASH_SOURCE})/autodemo.sh
 
 DEMO_AUTO_RUN='true'
-DEMO_DESC_RATE=100
 
-# desc "autodemo tutorial"
-# newl
+desc "autodemo tutorial"
+newl
 
-# desc "Using autodemo, you can script your live demos ahead of time."
-# desc "You'll have less to type and less to worry about."
-# newl
+desc "Using autodemo, you can script your live demos ahead of time."
+desc "You'll have less to type and less to worry about."
+newl
 
-# desc "There are three main functions:"
-# desc
-# desc "* \`desc' prints comments, like these."
-# newl
-# run "desc 'This is a comment.'"
-# newl
+desc "There are three main functions:"
+desc
+desc "* \`desc' prints comments, like these."
+newl
+run "desc 'This is a comment.'"
+newl
 
-# desc "* \`run' runs commands. We used it to run the \`desc' example above."
-# desc "Commands are actually run, not simulated."
-# run "run ls"
-# newl
+desc "* \`run' runs commands. We used it to run the \`desc' example above."
+desc "Commands are actually run, not simulated."
+run "run ls"
+newl
 
-# desc "* \`newl' moves to a new line, similar to how one might hit \`return' to"
-# desc "  create whitespace in an interactive shell."
-# run "newl"
-# desc "That was a newline."
-# newl
+desc "* \`newl' moves to a new line, similar to how one might hit \`return' to"
+desc "  create whitespace in an interactive shell."
+run "newl"
+desc "That was a newline."
+newl
 
-# desc "Using these functions you can write scripts that execute"
-# desc "interacitvely, as though you were typing them yourself."
-# newl
+desc "Using these functions you can write scripts that execute"
+desc "interacitvely, as though you were typing them yourself."
+newl
 
-# desc "There are also three environment variables that control execution:"
-# desc
+desc "Function execution can be controlled using environment"
+desc "variables:"
+newl
 
 desc "* DEMO_AUTO_RUN skips waiting for \`return' during command"
 desc "  execution. It defaults to \`false', but has been set to \`true'"
 desc "  for this tutorial."
+newl
 run "DEMO_AUTO_RUN=false"
 newl
 desc "Now commands will wait for \`return' before executing."
 run hostname
-desc
+run "DEMO_AUTO_RUN=true"
+newl
+
 desc "* DEMO_RUN_DELAY controls the delay before running an AUTO_RUN"
 desc "  command."
-run "DEMO_AUTO_RUN=true"
+newl
 run "DEMO_RUN_DELAY=5"
 run date
-desc
+newl
+
 desc "* DEMO_RATE controls the rate at which commands and comments are"
 desc "  printed."
-desc
-desc "* DEMO_DESC_RATE controls the rate at which comments are printed."
-desc
-desc "* DEMO_RUN_RATE controls the rate at which commands are printed."
 newl
+run "DEMO_RATE=50"
+desc "Now everything is typed at twice the default rate."
+newl
+
+desc "* DEMO_DESC_RATE controls the rate at which comments are"
+desc "  printed. It can be used to override DEMO_RATE."
+newl
+run "DEMO_DESC_RATE=25"
+desc "Now comments are printed at the original rate; but commands will"
+desc "continue to print at DEMO_RATE."
+newl
+run "df -a -h"
+newl
+
+desc "* DEMO_RUN_RATE controls the rate at which commands are"
+desc "  printed. It also overrides DEMO_RATE."
+newl
+run "DEMO_RUN_RATE=5"
+run pwd
+newl
+
+desc "That's everything you need to know to use autodemo. You can"
+desc "find the source for this tutorial in $0."

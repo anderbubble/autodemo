@@ -65,16 +65,6 @@ function run
 }
 
 
-function relative
-{
-    local arg
-    for arg in "$@"
-    do
-        echo "$(realpath $(dirname $0))/$arg" | sed "s|$(realpath $(pwd))|.|"
-    done
-}
-
-
 function prompt
 {
     echo -n "$yellow\$ $reset"
@@ -196,7 +186,6 @@ function init
 
     check_dependencies pv realpath dirname sed
     tty_orig=$(stty -g)
-    echo >&2 "$tty_orig"
 }
 
 
