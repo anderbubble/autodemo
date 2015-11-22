@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Original Copyright 2015 Tim Hockin
 # Additions Copyright 2015 Jonathon Anderson
 #
@@ -15,9 +16,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 . $(dirname ${BASH_SOURCE})/autodemo.sh
 
+
 DEMO_AUTO_RUN='true'
+
 
 desc "autodemo tutorial"
 newl
@@ -26,20 +30,20 @@ desc "Using autodemo, you can script your live demos ahead of time."
 desc "You'll have less to type and less to worry about."
 newl
 
-desc "There are three main functions:"
+desc "Functions"
 desc
 desc "* \`desc' prints comments, like these."
 newl
 run "desc 'This is a comment.'"
 newl
 
-desc "* \`run' runs commands. We used it to run the \`desc' example above."
-desc "Commands are actually run, not simulated."
+desc "* \`run' runs commands. We used it to run the \`desc' example"
+desc "  above. Commands are actually run, not simulated."
 run "run ls"
 newl
 
-desc "* \`newl' moves to a new line, similar to how one might hit \`return' to"
-desc "  create whitespace in an interactive shell."
+desc "* \`newl' moves to a new line, similar to how one might hit"
+desc "  \`return' to create whitespace in an interactive shell."
 run "newl"
 desc "That was a newline."
 newl
@@ -48,12 +52,13 @@ desc "Using these functions you can write scripts that execute"
 desc "interacitvely, as though you were typing them yourself."
 newl
 
-desc "Function execution can be controlled using environment"
-desc "variables:"
+desc "Environment variables"
 newl
 
 desc "* DEMO_AUTO_RUN skips waiting for \`return' during command"
-desc "  execution. It defaults to \`false', but has been set to \`true'"
+desc "  execution. It defaults to \`false', but has been set to"
+desc "  \`true'"
+
 desc "  for this tutorial."
 newl
 run "DEMO_AUTO_RUN=false"
