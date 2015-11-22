@@ -13,15 +13,20 @@ for [kube-demos](https://github.com/thockin/kube-demos). Run
 
 ## Functions
 
-* desc
-* run
-# newl
+* desc - print comments
+* run - run commands
+# newl - insert a newline
 
 
 ## Environment variables
 
-* DEMO_AUTO_RUN
-* DEMO_RUN_DELAY
-* DEMO_RATE
-* DEMO_DESC_RATE
-* DEMO_RUN_RATE
+* DEMO_AUTO_RUN - run commands without waiting (false|true)
+
+* DEMO_RUN_DELAY - wait before automatically running commands
+  (seconds)
+
+* DEMO_RATE - output print rate (bytes-per-second)
+
+* DEMO_DESC_RATE - comment output print rate (bytes-per-second)
+
+* DEMO_RUN_RATE - run command output print rate (bytes-per-second)
