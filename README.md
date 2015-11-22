@@ -1,11 +1,33 @@
-# kube-demos
-Kubernetes demos
+# autodemo
 
-To run these demos you need 'pv' and 'tmux' installed.
+Watchable automatic demos, based on the framework developed by Tim
+Hockin for kube-demos[1]. Run `tutorial.sh' for an example.
 
-To make best use of these demos:
 
-SSH to your kubernetes-master and set the following flags (in this order):
-  * kube-apiserver: --runtime-config=extensions/v1beta1/daemonsets=true
-  * kube-controllermanager: --pod-eviction-timeout=10s
+## Dependencies
 
+* pv
+* realpath
+* dirname
+* sed
+
+
+## Functions
+
+* desc
+* run
+# newl
+
+
+## Environment variables
+
+* DEMO_AUTO_RUN
+* DEMO_RUN_DELAY
+* DEMO_RATE
+* DEMO_DESC_RATE
+* DEMO_RUN_RATE
+
+
+## References
+
+[1]: https://github.com/thockin/kube-demos
